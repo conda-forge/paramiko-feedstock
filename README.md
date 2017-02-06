@@ -1,7 +1,7 @@
 About paramiko
 ==============
 
-Home: https://github.com/paramiko/paramiko/
+Home: http://www.paramiko.org/
 
 Package license: LGPL 2.1
 

@@ -1,7 +1,8 @@
 {%set name = "paramiko" %}
-{%set version = "1.17.3" %}
+{%set version = "1.18.1" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "eeec36063467636172c9638ae670601e6e6d63feb974d5192e886327c8735c23" %}
+{%set hash_val = "a17f693935ece50fdc647258d7e1d02f1499e534e9887c29cb02333695e907d8" %}
+{%set build_num = "0" %}
 
 package:
   name: {{ name }}
@@ -13,15 +14,13 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - pycrypto >=2.1,!=2.4,<3.0
-    - ecdsa >=0.11,<2.0
 
   run:
     - python
@@ -34,7 +33,6 @@ test:
 
 about:
   home: http://www.paramiko.org/
-  home: https://github.com/paramiko/paramiko/
   license: LGPL 2.1
   license_file: LICENSE
   summary: 'SSH2 protocol library'
