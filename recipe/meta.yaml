@@ -1,5 +1,5 @@
 {%set name = "paramiko" %}
-{%set version = "2.1.1" %}
+{%set version = "2.1.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "5fae49bed35e2e3d45c4f7b0db2d38b9ca626312d91119b3991d0ecf8125e310" %}
