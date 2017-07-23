@@ -1,21 +1,22 @@
-{%set name = "paramiko" %}
-{%set version = "2.1.2" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "5fae49bed35e2e3d45c4f7b0db2d38b9ca626312d91119b3991d0ecf8125e310" %}
-{%set build_num = "0" %}
+{% set name = "paramiko" %}
+{% set version = "2.2.1" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "ff94ae65379914ec3c960de731381f49092057b6dd1d24d18842ead5a2eb2277" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  skip: True  # [win]
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -25,7 +26,9 @@ requirements:
 
   run:
     - python
+    - bcrypt >=3.1.3
     - cryptography >=1.1
+    - pynacl >=1.0.1
     - pyasn1 >=0.1.7
 
 test:
@@ -34,8 +37,8 @@ test:
 
 about:
   home: http://www.paramiko.org/
-  license: LGPL 2.1
   license_file: LICENSE
+  license: LGPL 2.1
   summary: 'SSH2 protocol library'
   license_family: LGPL
   dev_url: https://github.com/paramiko/paramiko/
