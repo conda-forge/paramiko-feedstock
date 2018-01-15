@@ -14,7 +14,9 @@ Summary: SSH2 protocol library
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/paramiko-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/paramiko-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/paramiko-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/paramiko-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/paramiko-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/paramiko-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
 
 Current release info
 ====================
