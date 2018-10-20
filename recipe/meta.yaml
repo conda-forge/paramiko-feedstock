@@ -3,7 +3,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_val = "33e36775a6c71790ba7692a73f948b329cf9295a72b0102144b031114bd2a4f3" %}
-{% set build = 0 %}
+{% set build = 1000 %}
 
 package:
   name: {{ name }}
@@ -16,7 +16,7 @@ source:
 
 build:
   skip: True  # [win]
-  number: 0
+  number: 1000
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
