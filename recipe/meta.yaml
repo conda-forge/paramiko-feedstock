@@ -1,9 +1,8 @@
 {% set name = "paramiko" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "33e36775a6c71790ba7692a73f948b329cf9295a72b0102144b031114bd2a4f3" %}
-{% set build = 1000 %}
+{% set hash_val = "a8975a7df3560c9f1e2b43dc54ebd40fd00a7017392ca5445ce7df409f900fcb" %}
 
 package:
   name: {{ name }}
@@ -15,15 +14,13 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  skip: True  # [win]
   number: 1000
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - bcrypt >=3.1.3
