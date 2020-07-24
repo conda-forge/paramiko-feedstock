@@ -14,8 +14,9 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
 
 requirements:
   host:
@@ -34,7 +35,7 @@ test:
 about:
   home: http://www.paramiko.org/
   license_file: LICENSE
-  license: LGPL 2.1
+  license: LGPL-2.1-or-later
   summary: 'SSH2 protocol library'
   license_family: LGPL
   dev_url: https://github.com/paramiko/paramiko/
@@ -45,3 +46,4 @@ extra:
     - pmlandwehr
     - vamega
     - jakirkham
+    - tschoonj
