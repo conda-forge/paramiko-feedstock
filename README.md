@@ -5,7 +5,7 @@ Home: http://www.paramiko.org/
 
 Package license: LGPL-2.1-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paramiko-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paramiko-feedstock/blob/main/LICENSE.txt)
 
 Summary: SSH2 protocol library
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=754&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/paramiko-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=754&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/paramiko-feedstock?branchName=main">
       </a>
     </td>
   </tr>
