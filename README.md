@@ -1,11 +1,11 @@
-About paramiko
-==============
+About paramiko-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paramiko-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.paramiko.org/
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paramiko-feedstock/blob/main/LICENSE.txt)
 
 Summary: SSH2 protocol library
 
