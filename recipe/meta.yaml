@@ -1,7 +1,7 @@
 {% set name = "paramiko" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "6950faca6819acd3219d4ae694a23c7a87ee38d084f70c1724b0c0dbb8b75769" %}
+{% set hash_val = "93cdce625a8a1dc12204439d45033f3261bdb2c201648cfcdc06f9fd0f94ec29" %}
 
 package:
   name: {{ name }}
