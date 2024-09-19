@@ -1,7 +1,7 @@
 {% set name = "paramiko" %}
-{% set version = "3.4.1" %}
+{% set version = "3.5.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "8b15302870af7f6652f2e038975c1d2973f06046cb5d7d65355668b3ecbece0c" %}
+{% set hash_val = "ad11e540da4f55cedda52931f1a3f812a8238a7af7f62a60de538cd80bb28124" %}
 
 package:
   name: {{ name }}
@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
   run:
     - python >=3.6
     - bcrypt >=3.2
