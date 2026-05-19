@@ -147,6 +147,7 @@ Feedstock Maintainers
 =====================
 
 * [@jakirkham](https://github.com/jakirkham/)
+* [@jan-janssen](https://github.com/jan-janssen/)
 * [@tschoonj](https://github.com/tschoonj/)
 * [@vamega](https://github.com/vamega/)
 
