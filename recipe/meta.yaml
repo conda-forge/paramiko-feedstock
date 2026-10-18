@@ -1,7 +1,7 @@
 {% set name = "paramiko" %}
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "36763b5b95c2a0dcfdf1abc48e48156ee425b21efe2f0e787c2dd5a95c0e5e79" %}
+{% set hash_val = "239b5f9b2a53006cd54f83cf8495ee742083708ead947882c8dd2786de79f39b" %}
 
 package:
   name: {{ name }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   sha256: {{ hash_val }}
 
 build:
